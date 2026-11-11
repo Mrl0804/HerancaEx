@@ -11,6 +11,16 @@ namespace HerancaEx
 
         public int Preco { get; set; }
 
-        a
+        public ProdutoDigital(string nome, int preco)
+        {
+            Nome = nome;
+            Preco = preco;
+        }
+
+        public virtual void ExibirInformacoes()
+        {
+            Console.WriteLine($"Nome: {Nome}");
+            Console.WriteLine($"Preço: {Preco}");
+        }
     }
 }
