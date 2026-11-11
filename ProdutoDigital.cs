@@ -10,5 +10,7 @@ namespace HerancaEx
         public string Nome { get; set; }
 
         public int Preco { get; set; }
+
+        a
     }
 }
