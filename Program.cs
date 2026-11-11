@@ -8,11 +8,20 @@
 // carro1.ExibirInformacoes();
 // moto1.ExibirInformacoes();
 
-//! Exercício 2
+//? Exercício 2
 
-Ebook pd1  = new Ebook ("O senhor dos aneis", 50, 1000);
+// Ebook pd1  = new Ebook ("O senhor dos aneis", 50, 1000);
 
-CursoOnline pd2 = new CursoOnline ("Curso de C#", 100, 40);
+// CursoOnline pd2 = new CursoOnline ("Curso de C#", 100, 40);
 
-pd1.ExibirInformacoes();
-pd2.ExibirInformacoes();
+// pd1.ExibirInformacoes();
+// pd2.ExibirInformacoes();
+
+//! Exercício 3
+
+JogoDigital jogo1 = new JogoDigital("The Witcher 3", "PC", 50);
+
+JogoFisico jogo2 = new JogoFisico("The Last of Us", "PS4", 90);
+
+jogo1.ExibirInformacoes();
+jogo2.ExibirInformacoes();
