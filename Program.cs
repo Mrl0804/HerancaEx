@@ -19,9 +19,19 @@
 
 //! Exercício 3
 
-JogoDigital jogo1 = new JogoDigital("The Witcher 3", "PC", 50);
+// JogoDigital jogo1 = new JogoDigital("The Witcher 3", "PC", 50);
 
-JogoFisico jogo2 = new JogoFisico("The Last of Us", "PS4", 90);
+// JogoFisico jogo2 = new JogoFisico("The Last of Us", "PS4", 90);
 
-jogo1.ExibirInformacoes();
-jogo2.ExibirInformacoes();
+// jogo1.ExibirInformacoes();
+// jogo2.ExibirInformacoes();
+
+//? Exercício 4
+
+NotificacaoEmail email = new NotificacaoEmail();
+NotificacaoSms sms = new NotificacaoSms();
+NotificacaoPush push = new NotificacaoPush();
+
+email.EnviarNotificacao();
+sms.EnviarNotificacao();
+push.EnviarNotificacao();
