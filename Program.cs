@@ -28,10 +28,24 @@
 
 //? Exercício 4
 
-NotificacaoEmail email = new NotificacaoEmail();
-NotificacaoSms sms = new NotificacaoSms();
-NotificacaoPush push = new NotificacaoPush();
+// NotificacaoEmail email = new NotificacaoEmail();
+// NotificacaoSms sms = new NotificacaoSms();
+// NotificacaoPush push = new NotificacaoPush();
 
-email.EnviarNotificacao();
-sms.EnviarNotificacao();
-push.EnviarNotificacao();
+// email.EnviarNotificacao();
+// sms.EnviarNotificacao();
+// push.EnviarNotificacao();
+
+//! Exercício 5
+
+List<Entrega> entregas = new List<Entrega>
+{
+    new EntregaExpressa(50), 
+    new EntregaEconomica(50), 
+    new RetiradaLocal()       
+};
+
+foreach (var entrega in entregas)
+{
+    Console.WriteLine($"Frete: R$ {entrega.CalcularFrete():F2}");
+}
