@@ -38,14 +38,24 @@
 
 //! Exercício 5
 
-List<Entrega> entregas = new List<Entrega>
-{
-    new EntregaExpressa(50), 
-    new EntregaEconomica(50), 
-    new RetiradaLocal()       
-};
+// List<Entrega> entregas = new List<Entrega>
+// {
+//     new EntregaExpressa(50), 
+//     new EntregaEconomica(50), 
+//     new RetiradaLocal()       
+// };
 
-foreach (var entrega in entregas)
-{
-    Console.WriteLine($"Frete: R$ {entrega.CalcularFrete():F2}");
-}
+// foreach (var entrega in entregas)
+// {
+//     Console.WriteLine($"Frete: R$ {entrega.CalcularFrete():F2}");
+// }
+
+//? Exercício 6
+
+Relatorio relatorio = new Relatorio();
+Contrato contrato = new Contrato();
+
+relatorio.Imprimir();
+relatorio.Exportar();
+
+contrato.Imprimir();
